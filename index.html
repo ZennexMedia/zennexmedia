@@ -104,16 +104,20 @@
     <h2>Contact Us</h2>
     <p>Let’s work together! Send us a message and let’s talk about your business goals.</p>
     <form 
-      action="https://formspree.io/f/mwpokndp"
-      method="POST" enctype="application/x-www-form-urlencoded">
-      
-      <Input type="hidden" name="_formsubmit_id" value="">
-      <input type="text" placeholder="Your Name" required /><br /><br />
-      <input type="email" placeholder="Your Email" required /><br /><br />
-      <input type="text" placeholder="Business Name" /><br /><br />
-      <textarea placeholder="Your Message" rows="5" required></textarea><br /><br />
-      <button type="submit" class="cta-button">Send Message</button>
-    </form>
+  action="https://formspree.io/f/mwpokndp"
+  method="POST" 
+  enctype="application/x-www-form-urlencoded"
+>
+  <input type="hidden" name="_formsubmit_id" value="">
+
+  <input type="text" name="name" placeholder="Your Name" required /><br /><br />
+  <input type="email" name="email" placeholder="Your Email" required /><br /><br />
+  <input type="text" name="business" placeholder="Business Name" /><br /><br />
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br /><br />
+
+  <button type="submit" class="cta-button">Send Message</button>
+</form>
+
   </section>
 
   <footer>
